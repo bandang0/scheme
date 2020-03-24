@@ -1,3 +1,2 @@
-;;; This is a simple test script for the scheme interpreter
-
+; this is a simple test script for the scheme interpreter
 (display "Good morning!")
