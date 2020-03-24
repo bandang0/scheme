@@ -1,6 +1,7 @@
 (define reciprocal
   (lambda (n)
-    (if (= n 0)
+    (if (or (not (number? n))
+            (= n 0))
         "oops!"
         (/ 1 n)
     )
