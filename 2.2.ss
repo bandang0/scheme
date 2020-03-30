@@ -5,29 +5,24 @@
   ; return a dotted list...
   (list
     (list 'a 'b)
-    (list
-      (list
-        (list 'c)
-        (list 'd)
-      )
-      (list '())
+    (list (list (list 'c)
+                (list 'd)
+          )
+          (list '())
     )
   )
 )
 
 (define conss
   ; this does it with cons, and the answer is correct
-  (cons
-    (cons 'a 'b)
-    (cons
-      (cons
-        (cons 'c
-          (cons 'd '())
+  (cons (cons 'a 'b)
+        (cons (cons (cons 'c
+                          (cons 'd '())
+                    )
+                    (cons '() '())
+              )
+              '()
         )
-        (cons '() '())
-      )
-      '()
-    )
   )
 )
 
